@@ -6,7 +6,7 @@ Simple web app to visualize a 10km radius from any Australian address.
 
 ## Background
 
-Originally conceived during COVID-19 lockdowns when travel was restricted to 10km from home. My 2020 attempt took weeks and remained unfinished due to manual research and debugging challenges.
+Originally conceived during COVID-19 lockdowns when travel was restricted to 10km from home. My [2020 attempt](https://github.com/sazit/10kmawayfromhome) took weeks and remained unfinished due to manual research and debugging challenges.
 
 **This complete version was built using Claude AI in under one hour** - demonstrating how AI has revolutionized development speed and accessibility.
 
