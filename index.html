@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10km Radius - Australian Address Checker</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+          crossorigin="" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Map Container -->
+    <div id="map"></div>
+    
+    <!-- Title Overlay -->
+    <div class="title-overlay">
+        <h1>10KILOMETERSAWAYFROMHOME</h1>
+    </div>
+    
+    <!-- Map Type Toggle -->
+    <div class="map-controls">
+        <button id="satelliteBtn" class="map-btn">Satellite</button>
+        <button id="standardBtn" class="map-btn active">Standard</button>
+    </div>
+    
+    <!-- Search Container -->
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" id="addressInput" placeholder="Enter Australian address..." autocomplete="off">
+            <button id="searchButton" class="search-btn" type="button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Search Results Panel -->
+    <div id="searchResults" class="search-results-panel hidden">
+        <div class="results-header">
+            <h3>Search Results</h3>
+            <button id="closeResults" class="close-btn">×</button>
+        </div>
+        <div id="resultsList" class="results-list">
+            <!-- Results will be populated here -->
+        </div>
+    </div>
+    
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+            crossorigin=""></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
